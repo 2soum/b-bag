@@ -91,6 +91,8 @@ export default function Roadmap() {
                   <div className="flex items-center mt-3 space-x-2">
                     <span className="px-2 py-1 rounded-full bg-green-100 text-green-800 text-xs font-medium">Ahmed</span>
                     <span className="px-2 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-medium">Dayssam</span>
+                    <span className="px-2 py-1 rounded-full bg-purple-100 text-purple-800 text-xs font-medium">Ali</span>
+
                   </div>
                 </div>
               </div>
@@ -113,6 +115,8 @@ export default function Roadmap() {
                   <div className="flex items-center mt-3 space-x-2">
                     <span className="px-2 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-medium">Dayssam</span>
                     <span className="px-2 py-1 rounded-full bg-green-100 text-green-800 text-xs font-medium">Ahmed</span>
+                    <span className="px-2 py-1 rounded-full bg-purple-100 text-purple-800 text-xs font-medium">Ali</span>
+
                   </div>
                 </div>
               </div>
@@ -158,6 +162,8 @@ export default function Roadmap() {
                   <div className="flex items-center mt-3 space-x-2">
                     <span className="px-2 py-1 rounded-full bg-green-100 text-green-800 text-xs font-medium">Ahmed</span>
                     <span className="px-2 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-medium">Dayssam</span>
+                    <span className="px-2 py-1 rounded-full bg-purple-100 text-purple-800 text-xs font-medium">Ali</span>
+
                   </div>
                 </div>
               </div>
