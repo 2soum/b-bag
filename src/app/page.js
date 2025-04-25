@@ -9,6 +9,7 @@ import Results from '../components/results';
 import Deliverables from '../components/delivrables';
 import Footer from '../components/footer';
 import Histoire from '../components/histoire';
+import Roadmap from '../components/roadmap';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Variants />
       <CplexSection />
       <Results />
+      <Roadmap />
       <Deliverables />
       <Footer />
     </main>
