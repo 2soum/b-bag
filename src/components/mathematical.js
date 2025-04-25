@@ -159,23 +159,46 @@ export default function Mathematical() {
 
                 <div className="bg-gray-900 text-gray-100 p-4 rounded-md overflow-hidden">
                   <pre className="text-sm overflow-x-auto">
-                    {`// Modèle OPL pour le problème du sac à dos binaire
-int n = 5;                // Nombre d'objets
-range Items = 1..n;
+                    {`
+int n =...;                  // Nombre d'objets
+range Items = 1..n;     // Ensemble d'indices des objets
 
-int values[Items] = [60, 100, 120, 80, 40];
-int weights[Items] = [10, 20, 30, 15, 5];
-int capacity = 45;        // Capacité du sac
+float weights[Items]= ...;   // Poids des objets
+float values[Items]=...;    // Valeurs des objets
+float capacity=...;         // Capacité du sac à dos
 
 // Variables de décision
-dvar boolean x[Items];    // 1 si l'objet i est sélectionné, 0 sinon
+dvar boolean x[Items];  // x[i] = 1 si l'objet i est sélectionné, 0 sinon
 
-// Fonction objectif: maximiser la valeur totale
+// Fonction objectif : maximiser la valeur totale
 maximize sum(i in Items) values[i] * x[i];
 
-// Contrainte: le poids total ne doit pas dépasser la capacité
+// Contrainte : ne pas dépasser la capacité du sac
 subject to {
-  sum(i in Items) weights[i] * x[i] <= capacity;
+   sum(i in Items) weights[i] * x[i] <= capacity;
+}
+
+// Configuration de CPLEX
+execute {
+   cplex.tilim = 600;    
+   cplex.epgap = 0.01;   
+}
+
+// Affichage des résultats
+execute {
+   var selectedCount = 0;
+   var totalWeight = 0;
+ 
+   
+   for(var i in Items) {
+      if(x[i] > 0.5) {
+         selectedCount++;
+         totalWeight += weights[i];
+         writeln(i, " | ", weights[i], " | ", values[i], " | ", values[i]/weights[i]);
+      }
+   }
+   
+ 
 }`}
                   </pre>
                 </div>

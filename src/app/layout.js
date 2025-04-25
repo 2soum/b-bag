@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
               <a href="#" className="text-blue-900 font-bold text-xl">OptimBag</a>
               <div className="flex gap-6">
                 <a href="#definition" className="text-gray-700 hover:text-blue-700 transition-colors">Définition</a>
+                <a href="#literature" className="text-gray-700 hover:text-blue-700 transition-colors">Revue de littérature</a>
                 <a href="#simulation" className="text-gray-700 hover:text-blue-700 transition-colors">Simulation</a>
                 <a href="#variants" className="text-gray-700 hover:text-blue-700 transition-colors">Variantes</a>
                 <a href="#cplex" className="text-gray-700 hover:text-blue-700 transition-colors">CPLEX</a>

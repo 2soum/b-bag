@@ -39,22 +39,10 @@ export default function Footer() {
           
           <div className="mt-8 pt-8 border-t border-blue-800 text-center">
             <p className="text-blue-300 text-sm">
-              Ce projet a été réalisé dans le cadre du cours d'optimisation - 2025
+              Ce projet a été réalisé dans le cadre du cours d'optimisation par DAYSSAM BAKAAR, ALI KAFAGY et AHMED KAFAGY - 2025 EFREI PARIS
             </p>
             
-            <div className="mt-4 flex justify-center space-x-4">
-              <a href="#" className="text-blue-300 hover:text-white transition-colors">
-                Mentions légales
-              </a>
-              <span className="text-blue-600">|</span>
-              <a href="#" className="text-blue-300 hover:text-white transition-colors">
-                Politique de confidentialité
-              </a>
-              <span className="text-blue-600">|</span>
-              <a href="#" className="text-blue-300 hover:text-white transition-colors">
-                Conditions d'utilisation
-              </a>
-            </div>
+            
           </div>
         </div>
       </footer>

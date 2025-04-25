@@ -168,33 +168,7 @@ export default function Variants() {
                           </div>
                         </div>
 
-                        <div className="mt-4">
-                          <h4 className="text-lg font-semibold text-blue-700 mb-2">Comparaison avec le binaire</h4>
-                          <div className="space-y-2">
-                            <div className="bg-white p-2 rounded border border-blue-100">
-                              <div className="font-semibold text-blue-800 text-sm">Complexité</div>
-                              <div className="flex justify-between text-sm">
-                                <span>Binaire: NP-difficile</span>
-                                <span className="text-green-600">Fractionnel: O(n log n)</span>
-                              </div>
-                            </div>
-
-                            <div className="bg-white p-2 rounded border border-blue-100">
-                              <div className="font-semibold text-blue-800 text-sm">Optimalité</div>
-                              <div className="flex justify-between text-sm">
-                                <span>Binaire: Exacte</span>
-                                <span className="text-green-600">Fractionnel: Gloutonne</span>
-                              </div>
-                            </div>
-
-                            <div className="bg-white p-2 rounded border border-blue-100">
-                              <div className="font-semibold text-blue-800 text-sm">Valeur solution</div>
-                              <div className="text-sm">
-                                Valeur<sub>fractionnel</sub> ≥ Valeur<sub>binaire</sub>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        
                       </div>
                     </div>
                   </div>

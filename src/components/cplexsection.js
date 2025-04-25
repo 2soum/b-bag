@@ -124,28 +124,7 @@ export default function CplexSection() {
                 spécialement conçu pour être utilisé avec CPLEX.
               </p>
 
-              <div className="bg-gray-900 text-gray-100 p-4 rounded-md overflow-hidden">
-                <pre className="text-sm overflow-x-auto">
-{`// Modèle OPL pour le problème du sac à dos binaire
-int n = ...;                // Nombre d'objets
-range Items = 1..n;
-
-int values[Items] = ...;    // Valeurs des objets
-int weights[Items] = ...;   // Poids des objets
-int capacity = ...;         // Capacité du sac
-
-// Variables de décision
-dvar boolean x[Items];      // 1 si l'objet i est sélectionné, 0 sinon
-
-// Fonction objectif: maximiser la valeur totale
-maximize sum(i in Items) values[i] * x[i];
-
-// Contrainte: le poids total ne doit pas dépasser la capacité
-subject to {
-  sum(i in Items) weights[i] * x[i] <= capacity;
-}`}
-                </pre>
-              </div>
+              
 
               <p className="text-gray-600 text-sm mt-2">
                 Ce modèle OPL représente le problème du sac à dos binaire. Les variables <code>values</code>, <code>weights</code>, et <code>capacity</code> 
@@ -159,16 +138,13 @@ subject to {
 
             <div className="border border-gray-200 rounded-lg overflow-hidden">
               <img 
-                src="/api/placeholder/800/500" 
+                src="/Capture_decran_2025-04-25_a_13.34.50.webp" 
                 alt="Interface CPLEX Studio IDE" 
                 className="w-full h-auto"
               />
             </div>
 
-            <p className="text-gray-700">
-              CPLEX Studio IDE offre un environnement de développement intégré pour créer, déboguer et exécuter 
-              des modèles d&apos;optimisation. L'interface permet de visualiser les résultats et d'analyser les performances.
-            </p>
+            
 
             <div className="mt-6">
               <h4 className="text-lg font-semibold text-blue-700 mb-3">Workflow de résolution avec CPLEX</h4>
@@ -265,41 +241,7 @@ subject to {
           </div>
         </div>
 
-        <div className="mt-16">
-          <h3 className="section-subtitle">Exemple de résolution pour de petites instances</h3>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Code du premier exemple */}
-            
-            <div className="card">
-              <h4 className="text-lg font-semibold text-blue-700 mb-3">Performance de CPLEX</h4>
-
-              <div className="h-64 bg-gray-100 flex items-center justify-center rounded-md mb-4">
-                <div className="text-center p-4 w-full">
-                  <p className="text-gray-500">Graphique de performance</p>
-                  <p className="text-sm text-gray-400">(Temps de résolution vs Taille de l'instance)</p>
-                  <Line data={data} options={options} />
-                </div>
-              </div>
-
-              <p className="text-gray-700 mb-4">
-                Pour de petites instances (jusqu'à 20 objets), CPLEX trouve la solution optimale en quelques millisecondes. 
-                Le solveur utilise des techniques avancées comme la génération de coupes et le prétraitement pour réduire 
-                l'espace de recherche.
-              </p>
-
-              <div className="p-3 bg-blue-50 rounded-md">
-                <h5 className="font-semibold text-blue-800 mb-1">Avantages pour les petites instances</h5>
-                <ul className="text-sm text-gray-700 space-y-1">
-                  <li>• Résolution exacte garantie</li>
-                  <li>• Temps d'exécution négligeable</li>
-                  <li>• Analyse de sensibilité disponible</li>
-                  <li>• Exploration complète de l'espace de solutions</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

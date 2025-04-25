@@ -1,232 +1,93 @@
 // components/Deliverables.js
 export default function Deliverables() {
-    return (
-      <section id="deliverables" className="py-20 bg-white">
-        <div className="container mx-auto max-w-6xl px-4">
-          <h2 className="section-title">Livrables du Projet</h2>
-          
-          <div className="grid md:grid-cols-2 gap-10">
-            <div className="space-y-6">
-              <h3 className="section-subtitle">Rapport du projet</h3>
-              
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Le rapport de projet est un document complet qui présente en détail notre travail sur le problème 
-                du sac à dos binaire. Il est structuré de manière claire et concise pour faciliter la compréhension 
-                et l'évaluation de notre approche.
+  return (
+    <section id="deliverables" className="py-20 bg-white">
+      <div className="container mx-auto max-w-6xl px-4">
+        <h2 className="section-title">Livrables du Projet</h2>
+        
+        <div className="max-w-3xl mx-auto">
+          <div className="space-y-8">
+            <div className="text-center">
+              <h3 className="section-subtitle mb-6">Code Source CPLEX</h3>
+              <p className="text-lg text-gray-700 mb-8">
+                Téléchargez nos implémentations du problème du sac à dos binaire pour IBM CPLEX Optimizer.
+                Nous proposons deux variantes avec des instances de différentes tailles.
               </p>
-              
-              <div className="bg-white p-6 border border-blue-200 rounded-lg shadow-sm">
-                <h4 className="text-lg font-semibold text-blue-700 mb-4">Structure du rapport</h4>
-                
-                <div className="space-y-3">
-                  <div className="flex gap-3">
-                    <div className="w-8 h-8 rounded-full bg-blue-600 flex-shrink-0 flex items-center justify-center text-white font-bold">1</div>
-                    <div>
-                      <h5 className="font-semibold text-gray-800">Introduction</h5>
-                      <p className="text-gray-600 text-sm">
-                        Présentation du problème, des objectifs et de la méthodologie adoptée.
-                      </p>
-                    </div>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="card bg-white p-6 border border-blue-200 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+                <div className="mb-4">
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-700" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-5L9 2H4zm7 5a1 1 0 10-2 0v1.586l-.293-.293a1 1 0 10-1.414 1.414l2 2 .002.002a.997.997 0 001.41 0l.002-.002 2-2a1 1 0 00-1.414-1.414l-.293.293V9z" clipRule="evenodd" />
+                    </svg>
                   </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="w-8 h-8 rounded-full bg-blue-600 flex-shrink-0 flex items-center justify-center text-white font-bold">2</div>
-                    <div>
-                      <h5 className="font-semibold text-gray-800">Définition du problème</h5>
-                      <p className="text-gray-600 text-sm">
-                        Description détaillée du problème du sac à dos binaire, de ses caractéristiques et applications.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="w-8 h-8 rounded-full bg-blue-600 flex-shrink-0 flex items-center justify-center text-white font-bold">3</div>
-                    <div>
-                      <h5 className="font-semibold text-gray-800">Revue de la littérature</h5>
-                      <p className="text-gray-600 text-sm">
-                        Synthèse des travaux de recherche antérieurs sur le problème du sac à dos et ses variantes.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="w-8 h-8 rounded-full bg-blue-600 flex-shrink-0 flex items-center justify-center text-white font-bold">4</div>
-                    <div>
-                      <h5 className="font-semibold text-gray-800">Formulation mathématique</h5>
-                      <p className="text-gray-600 text-sm">
-                        Modélisation mathématique du problème avec variables, fonction objectif et contraintes.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="w-8 h-8 rounded-full bg-blue-600 flex-shrink-0 flex items-center justify-center text-white font-bold">5</div>
-                    <div>
-                      <h5 className="font-semibold text-gray-800">Implémentation avec CPLEX</h5>
-                      <p className="text-gray-600 text-sm">
-                        Description de l'implémentation en OPL, des jeux de données et de la configuration utilisée.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="w-8 h-8 rounded-full bg-blue-600 flex-shrink-0 flex items-center justify-center text-white font-bold">6</div>
-                    <div>
-                      <h5 className="font-semibold text-gray-800">Résultats expérimentaux</h5>
-                      <p className="text-gray-600 text-sm">
-                        Présentation des résultats obtenus pour différentes tailles d'instances.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="w-8 h-8 rounded-full bg-blue-600 flex-shrink-0 flex items-center justify-center text-white font-bold">7</div>
-                    <div>
-                      <h5 className="font-semibold text-gray-800">Analyse et interprétation</h5>
-                      <p className="text-gray-600 text-sm">
-                        Analyse détaillée des performances, des facteurs influençant la difficulté, et des limites.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <div className="w-8 h-8 rounded-full bg-blue-600 flex-shrink-0 flex items-center justify-center text-white font-bold">8</div>
-                    <div>
-                      <h5 className="font-semibold text-gray-800">Conclusion et perspectives</h5>
-                      <p className="text-gray-600 text-sm">
-                        Synthèse du travail réalisé et des enseignements tirés, perspectives d'amélioration.
-                      </p>
-                    </div>
-                  </div>
+                  <h4 className="text-lg font-semibold text-blue-800">Petites Instances</h4>
                 </div>
+                
+                <div className="text-gray-700 mb-6">
+                  <p className="mb-2">
+                    <span className="font-medium">bag_knapsack_small.zip</span>
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    Modèle OPL avec instances de 5 à 20 objets
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    Temps d'exécution rapide, idéal pour l'apprentissage
+                  </p>
+                </div>
+                
+                <a 
+                  href="/bag_knapsack_small.zip"
+                  download
+                  className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors"
+                >
+                  Télécharger bag_knapsack_small.zip
+                </a>
+              </div>
+              
+              <div className="card bg-white p-6 border border-green-200 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+                <div className="mb-4">
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-700" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-5L9 2H4zm7 5a1 1 0 10-2 0v1.586l-.293-.293a1 1 0 10-1.414 1.414l2 2 .002.002a.997.997 0 001.41 0l.002-.002 2-2a1 1 0 00-1.414-1.414l-.293.293V9z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <h4 className="text-lg font-semibold text-green-800">Grandes Instances</h4>
+                </div>
+                
+                <div className="text-gray-700 mb-6">
+                  <p className="mb-2">
+                    <span className="font-medium">bag_knapsack_large.zip</span>
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    Modèle OPL avec instances de 50 à 1000 objets
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    Configuration avancée pour les performances
+                  </p>
+                </div>
+                
+                <a 
+                  href="/bag_knapsack_large.zip"
+                  download
+                  className="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md transition-colors"
+                >
+                  Télécharger bag_knapsack_large.zip
+                </a>
               </div>
             </div>
             
-            <div className="space-y-6">
-              <h3 className="section-subtitle">Code source et données</h3>
-              
-              <div className="bg-white p-6 border border-green-200 rounded-lg shadow-sm mb-6">
-                <h4 className="text-lg font-semibold text-green-700 mb-4">Contenu du code source</h4>
-                
-                <div className="space-y-3">
-                  <div className="flex items-start gap-2">
-                    <span className="text-green-600 font-bold">•</span> 
-                    <div>
-                      <span className="font-medium">Modèle OPL principal</span>
-                      <p className="text-sm text-gray-600">
-                        Implémentation complète du modèle mathématique en langage OPL.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <span className="text-green-600 font-bold">•</span> 
-                    <div>
-                      <span className="font-medium">Fichiers de données</span>
-                      <p className="text-sm text-gray-600">
-                        Jeux de données pour différentes tailles d'instances: petites, moyennes et grandes.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <span className="text-green-600 font-bold">•</span> 
-                    <div>
-                      <span className="font-medium">Scripts d'expérimentation</span>
-                      <p className="text-sm text-gray-600">
-                        Scripts pour automatiser les tests sur différentes instances et collecter les résultats.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <span className="text-green-600 font-bold">•</span> 
-                    <div>
-                      <span className="font-medium">Configurations CPLEX</span>
-                      <p className="text-sm text-gray-600">
-                        Fichiers de configuration pour ajuster les paramètres du solveur selon les instances.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <span className="text-green-600 font-bold">•</span> 
-                    <div>
-                      <span className="font-medium">Visualisation des résultats</span>
-                      <p className="text-sm text-gray-600">
-                        Scripts pour générer les graphiques et tableaux d'analyse des performances.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="bg-white p-6 border border-purple-200 rounded-lg shadow-sm">
-                <h4 className="text-lg font-semibold text-purple-700 mb-4">Présentation du projet</h4>
-                
-                <p className="text-gray-700 mb-4">
-                  En plus du rapport écrit, une présentation synthétique sera fournie pour exposer les aspects clés 
-                  du projet et ses résultats principaux.
-                </p>
-                
-                <div className="space-y-3">
-                  <div className="flex items-start gap-2">
-                    <span className="text-purple-600 font-bold">•</span> 
-                    <div>
-                      <span className="font-medium">Format</span>
-                      <p className="text-sm text-gray-600">
-                        Présentation PowerPoint ou PDF, avec des diapositives claires et concises.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <span className="text-purple-600 font-bold">•</span> 
-                    <div>
-                      <span className="font-medium">Durée</span>
-                      <p className="text-sm text-gray-600">
-                        Conçue pour une présentation de 15-20 minutes avec démonstration.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <span className="text-purple-600 font-bold">•</span> 
-                    <div>
-                      <span className="font-medium">Contenu</span>
-                      <p className="text-sm text-gray-600">
-                        Vue d'ensemble du problème, approche méthodologique, démonstration de l'implémentation, 
-                        résultats clés et conclusions.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-2">
-                    <span className="text-purple-600 font-bold">•</span> 
-                    <div>
-                      <span className="font-medium">Visuels</span>
-                      <p className="text-sm text-gray-600">
-                        Graphiques, schémas et animations pour illustrer le problème et les résultats.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="mt-8 text-center">
-                <a 
-                  href="#"
-                  className="inline-flex items-center justify-center bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-md transition-colors shadow-md"
-                >
-                  Télécharger les modèles de livrables
-                </a>
-                <p className="mt-2 text-sm text-gray-600">
-                  Templates pour faciliter la création des rapports et présentations
-                </p>
-              </div>
+            <div className="mt-8 p-4 bg-gray-50 rounded-lg border border-gray-200 text-center">
+              <p className="text-gray-700 text-sm">
+                Ces fichiers contiennent le code source OPL, les jeux de données et les instructions d'utilisation.
+                <br />Compatibles avec IBM CPLEX Optimizer 12.10 et versions ultérieures.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );
+}

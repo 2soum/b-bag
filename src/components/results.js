@@ -194,7 +194,7 @@ export default function Results() {
           {/* Résultats détaillés */}
           <div>
             <h3 className="section-subtitle">Résultats détaillés</h3>
-            {/* Résultats sous forme de tableau */}
+            
             <div className="bg-white rounded-lg shadow-md overflow-hidden mb-6">
               <table className="min-w-full border-collapse">
                 <thead>
@@ -207,7 +207,6 @@ export default function Results() {
                   </tr>
                 </thead>
                 <tbody>
-                  {/* Exemple de données */}
                   <tr>
                     <td className="border border-gray-200 px-4 py-2">KP_Small_1</td>
                     <td className="border border-gray-200 px-4 py-2">10</td>
@@ -215,10 +214,59 @@ export default function Results() {
                     <td className="border border-gray-200 px-4 py-2">0.01</td>
                     <td className="border border-gray-200 px-4 py-2">0.0%</td>
                   </tr>
-                  {/* Autres lignes de résultats */}
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-200 px-4 py-2">KP_Small_2</td>
+                    <td className="border border-gray-200 px-4 py-2">15</td>
+                    <td className="border border-gray-200 px-4 py-2">412</td>
+                    <td className="border border-gray-200 px-4 py-2">0.02</td>
+                    <td className="border border-gray-200 px-4 py-2">0.0%</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-200 px-4 py-2">KP_Medium_1</td>
+                    <td className="border border-gray-200 px-4 py-2">50</td>
+                    <td className="border border-gray-200 px-4 py-2">1024</td>
+                    <td className="border border-gray-200 px-4 py-2">1.35</td>
+                    <td className="border border-gray-200 px-4 py-2">0.0%</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-200 px-4 py-2">KP_Medium_2</td>
+                    <td className="border border-gray-200 px-4 py-2">75</td>
+                    <td className="border border-gray-200 px-4 py-2">1631</td>
+                    <td className="border border-gray-200 px-4 py-2">8.72</td>
+                    <td className="border border-gray-200 px-4 py-2">0.0%</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-200 px-4 py-2">KP_Large_1</td>
+                    <td className="border border-gray-200 px-4 py-2">150</td>
+                    <td className="border border-gray-200 px-4 py-2">3127</td>
+                    <td className="border border-gray-200 px-4 py-2">62.48</td>
+                    <td className="border border-gray-200 px-4 py-2">0.0%</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-200 px-4 py-2">KP_Large_2</td>
+                    <td className="border border-gray-200 px-4 py-2">200</td>
+                    <td className="border border-gray-200 px-4 py-2">4582</td>
+                    <td className="border border-gray-200 px-4 py-2">186.31</td>
+                    <td className="border border-gray-200 px-4 py-2">0.3%</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-200 px-4 py-2">KP_XLarge_1</td>
+                    <td className="border border-gray-200 px-4 py-2">500</td>
+                    <td className="border border-gray-200 px-4 py-2">11248</td>
+                    <td className="border border-gray-200 px-4 py-2">300.00</td>
+                    <td className="border border-gray-200 px-4 py-2">2.1%</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-200 px-4 py-2">KP_XLarge_2</td>
+                    <td className="border border-gray-200 px-4 py-2">1000</td>
+                    <td className="border border-gray-200 px-4 py-2">22413</td>
+                    <td className="border border-gray-200 px-4 py-2">300.00</td>
+                    <td className="border border-gray-200 px-4 py-2">4.5%</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
+
           </div>
         </div>
       </div>
