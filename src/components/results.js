@@ -59,7 +59,7 @@ export default function Results() {
         <h2 className="section-title">Résultats et Interprétation</h2>
 
         <div className="mb-12">
-          <h3 className="section-subtitle">Comparaison des résultats avec différentes tailles d'instances</h3>
+          <h3 className="section-subtitle">Comparaison des résultats avec différentes tailles d&apos;instances</h3>
           
           <div className="grid md:grid-cols-3 gap-6">
             <div className="card">
@@ -128,7 +128,7 @@ export default function Results() {
               <div className="h-48 bg-yellow-50 rounded-md flex items-center justify-center mb-4">
                 <div className="text-center p-4">
                   <p className="text-3xl font-bold text-yellow-800">95.5%</p>
-                  <p className="text-sm text-yellow-600">Gap d'optimalité moyen</p>
+                  <p className="text-sm text-yellow-600">Gap d&apos;optimalité moyen</p>
                 </div>
               </div>
               
@@ -162,13 +162,13 @@ export default function Results() {
               <div className="h-64 bg-gray-100 rounded-md flex items-center justify-center mb-4">
                 <div className="text-center p-4 w-full">
                   <p className="text-gray-500">Graphique de performance</p>
-                  <p className="text-sm text-gray-400">(Temps de résolution vs Nombre d'objets)</p>
+                  <p className="text-sm text-gray-400">(Temps de résolution vs Nombre d&apos;objets)</p>
                   <Line data={performanceData} options={options} />
                 </div>
               </div>
               
               <p className="text-gray-700">
-                Le graphique ci-dessus montre l'évolution du temps de résolution en fonction du nombre d'objets. 
+                Le graphique ci-dessus montre l&apos;évolution du temps de résolution en fonction du nombre d&apos;objets. 
                 On observe une croissance exponentielle typique des problèmes NP-difficiles. Néanmoins, CPLEX 
                 parvient à résoudre efficacement des instances de taille moyenne grâce à ses algorithmes avancés.
               </p>
@@ -183,7 +183,7 @@ export default function Results() {
                   <h5 className="font-semibold text-blue-800 mb-1">Corrélation valeur/poids</h5>
                   <p className="text-sm text-gray-700">
                     Les instances où les valeurs et les poids sont fortement corrélés sont généralement plus 
-                    difficiles à résoudre car l'algorithme glouton n'est pas efficace.
+                    difficiles à résoudre car l&apos;algorithme glouton n&apos;est pas efficace.
                   </p>
                 </div>
                 {/* Autres facteurs... */}

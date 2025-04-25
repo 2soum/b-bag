@@ -34,7 +34,7 @@ export default function Deliverables() {
                     Modèle OPL avec instances de 5 à 20 objets
                   </p>
                   <p className="text-sm text-gray-600">
-                    Temps d'exécution rapide, idéal pour l'apprentissage
+                    Temps d&apos;exécution rapide, idéal pour l&apos;apprentissage
                   </p>
                 </div>
                 
@@ -81,7 +81,7 @@ export default function Deliverables() {
             
             <div className="mt-8 p-4 bg-gray-50 rounded-lg border border-gray-200 text-center">
               <p className="text-gray-700 text-sm">
-                Ces fichiers contiennent le code source OPL, les jeux de données et les instructions d'utilisation.
+                Ces fichiers contiennent le code source OPL, les jeux de données et les instructions d&apos;utilisation.
                 <br />Compatibles avec IBM CPLEX Optimizer 12.10 et versions ultérieures.
               </p>
             </div>

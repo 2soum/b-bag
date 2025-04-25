@@ -120,7 +120,7 @@ export default function CplexSection() {
 
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 OPL (Optimization Programming Language) est un langage de modélisation algébrique qui 
-                permet d&apos;exprimer des problèmes d'optimisation. Il est 
+                permet d&apos;exprimer des problèmes d&apos;optimisation. Il est 
                 spécialement conçu pour être utilisé avec CPLEX.
               </p>
 
@@ -195,8 +195,8 @@ export default function CplexSection() {
                     <div className="ml-4">
                       <h5 className="text-lg font-semibold text-blue-800">Configuration du solveur</h5>
                       <p className="text-gray-700 mt-1">
-                        Configurer les paramètres de CPLEX, comme le temps maximal d'exécution, 
-                        la tolérance d'optimalité, ou les stratégies de recherche.
+                        Configurer les paramètres de CPLEX, comme le temps maximal d&apos;exécution, 
+                        la tolérance d&apos;optimalité, ou les stratégies de recherche.
                       </p>
                     </div>
                   </div>
@@ -212,7 +212,7 @@ export default function CplexSection() {
                     <div className="ml-4">
                       <h5 className="text-lg font-semibold text-blue-800">Exécution et résolution</h5>
                       <p className="text-gray-700 mt-1">
-                        Lancer le solveur CPLEX pour résoudre le problème. Le solveur explore l'espace 
+                        Lancer le solveur CPLEX pour résoudre le problème. Le solveur explore l&apos;espace 
                         de solutions et trouve la solution optimale ou la meilleure solution possible 
                         dans le temps imparti.
                       </p>

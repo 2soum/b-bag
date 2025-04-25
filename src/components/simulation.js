@@ -503,7 +503,7 @@ export default function Simulation() {
                 {/* Logs de l'algorithme */}
                 {animationLog.length > 0 && (
                   <div className="mt-4 p-3 bg-gray-100 rounded-md border border-gray-200 max-h-[150px] overflow-y-auto">
-                    <h4 className="text-sm font-semibold text-gray-700 mb-2">Étapes de l'algorithme:</h4>
+                    <h4 className="text-sm font-semibold text-gray-700 mb-2">Étapes de l&apos;algorithme:</h4>
                     <ol className="space-y-1 text-sm text-gray-600 list-decimal list-inside">
                       {animationLog.map((log, index) => (
                         <li key={index} className={index === animationLog.length - 1 ? 'font-medium text-blue-700' : ''}>

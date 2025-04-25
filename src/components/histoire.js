@@ -10,7 +10,7 @@ export default function Literature() {
               <h3 className="section-subtitle">Évolution des approches de résolution</h3>
               
               <p className="text-lg text-gray-700 leading-relaxed">
-                Le problème du sac à dos binaire est l'un des problèmes d'optimisation combinatoire les plus étudiés 
+                Le problème du sac à dos binaire est l&apos;un des problèmes d&apos;optimisation combinatoire les plus étudiés 
                 dans la littérature scientifique. Son importance théorique et ses nombreuses applications pratiques 
                 ont conduit à un riche corpus de recherche depuis plus de 50 ans.
               </p>
@@ -23,8 +23,8 @@ export default function Literature() {
                     <div className="p-4 bg-blue-50 rounded-md">
                       <h5 className="font-semibold text-blue-800 mb-1">Programmation dynamique</h5>
                       <p className="text-gray-700">
-                        <strong>Bellman (1957)</strong> a proposé l'une des premières approches de résolution basée sur la 
-                        programmation dynamique, avec une complexité de O(nW), où n est le nombre d'objets et W la capacité 
+                        <strong>Bellman (1957)</strong> a proposé l&apos;une des premières approches de résolution basée sur la 
+                        programmation dynamique, avec une complexité de O(nW), où n est le nombre d&apos;objets et W la capacité 
                         du sac. Cette approche reste fondamentale et est toujours utilisée comme base de nombreux algorithmes.
                       </p>
                     </div>
@@ -33,7 +33,7 @@ export default function Literature() {
                       <h5 className="font-semibold text-blue-800 mb-1">Branch and Bound</h5>
                       <p className="text-gray-700">
                         <strong>Kolesar (1967)</strong> et <strong>Horowitz et Sahni (1974)</strong> ont développé 
-                        des algorithmes de Branch and Bound qui explorent intelligemment l'espace de solutions en 
+                        des algorithmes de Branch and Bound qui explorent intelligemment l&apos;espace de solutions en 
                         utilisant des bornes supérieures pour élaguer des branches non prometteuses.
                       </p>
                     </div>
@@ -54,10 +54,10 @@ export default function Literature() {
                   
                   <div className="space-y-4">
                     <div className="p-4 bg-green-50 rounded-md">
-                      <h5 className="font-semibold text-green-800 mb-1">Algorithmes d'approximation</h5>
+                      <h5 className="font-semibold text-green-800 mb-1">Algorithmes d&apos;approximation</h5>
                       <p className="text-gray-700">
-                        <strong>Ibarra et Kim (1975)</strong> ont développé le premier schéma d'approximation en temps 
-                        polynomial (FPTAS) pour le problème du sac à dos, garantissant une solution à ε près de l'optimum 
+                        <strong>Ibarra et Kim (1975)</strong> ont développé le premier schéma d&apos;approximation en temps 
+                        polynomial (FPTAS) pour le problème du sac à dos, garantissant une solution à ε près de l&apos;optimum 
                         en temps polynomial en fonction de 1/ε.
                       </p>
                     </div>
@@ -66,16 +66,16 @@ export default function Literature() {
                       <h5 className="font-semibold text-green-800 mb-1">Métaheuristiques</h5>
                       <p className="text-gray-700">
                         <strong>Chu et Beasley (1998)</strong> ont appliqué des algorithmes génétiques au problème 
-                        du sac à dos avec d'excellents résultats. D'autres approches comme le recuit simulé 
+                        du sac à dos avec d&apos;excellents résultats. D&apos;autres approches comme le recuit simulé 
                         (<strong>Aarts et Korst, 1989</strong>) et la recherche tabou (<strong>Glover, 1990</strong>) 
                         ont également été adaptées avec succès.
                       </p>
                     </div>
                     
                     <div className="p-4 bg-green-50 rounded-md">
-                      <h5 className="font-semibold text-green-800 mb-1">Hybridation d'algorithmes</h5>
+                      <h5 className="font-semibold text-green-800 mb-1">Hybridation d&apos;algorithmes</h5>
                       <p className="text-gray-700">
-                        <strong>Puchinger et al. (2010)</strong> ont montré l'efficacité des approches hybrides 
+                        <strong>Puchinger et al. (2010)</strong> ont montré l&apos;efficacité des approches hybrides 
                         combinant des méthodes exactes (comme la programmation dynamique) avec des heuristiques 
                         pour résoudre des instances de grande taille.
                       </p>
@@ -100,7 +100,7 @@ export default function Literature() {
                       <h5 className="font-semibold text-purple-800 mb-1">Relaxation lagrangienne</h5>
                       <p className="text-gray-700">
                         <strong>Fisher (1981)</strong> a appliqué avec succès la relaxation lagrangienne au problème 
-                        du sac à dos, permettant d'obtenir de meilleures bornes et d'accélérer la résolution des 
+                        du sac à dos, permettant d&apos;obtenir de meilleures bornes et d&apos;accélérer la résolution des 
                         instances difficiles.
                       </p>
                     </div>
@@ -108,7 +108,7 @@ export default function Literature() {
                     <div className="p-4 bg-purple-50 rounded-md">
                       <h5 className="font-semibold text-purple-800 mb-1">Génération de coupes</h5>
                       <p className="text-gray-700">
-                        <strong>Balas et Zemel (1980)</strong> ont développé l'algorithme du "core" et introduit 
+                        <strong>Balas et Zemel (1980)</strong> ont développé l&apos;algorithme du &quot;core&quot; et introduit 
                         des techniques de génération de coupes spécifiques au sac à dos qui sont encore à la base 
                         des méthodes utilisées par les solveurs commerciaux modernes.
                       </p>
@@ -208,7 +208,7 @@ export default function Literature() {
                           <em>Knapsack Problems</em>, Springer
                         </div>
                         <p className="text-xs text-gray-600 mt-1">
-                          L'ouvrage le plus complet sur tous les aspects du problème du sac à dos
+                          L&apos;ouvrage le plus complet sur tous les aspects du problème du sac à dos
                         </p>
                       </div>
                     </li>
@@ -223,7 +223,7 @@ export default function Literature() {
                           <em>Knapsack Problems: Algorithms and Computer Implementations</em>, Wiley
                         </div>
                         <p className="text-xs text-gray-600 mt-1">
-                          Un classique avec des algorithmes fondamentaux encore utilisés aujourd'hui
+                          Un classique avec des algorithmes fondamentaux encore utilisés aujourd&apos;hui
                         </p>
                       </div>
                     </li>
@@ -247,10 +247,10 @@ export default function Literature() {
                   <div className="mt-4 p-3 bg-yellow-100 rounded-md">
                     <h4 className="font-semibold text-yellow-800 mb-1">Articles fondamentaux</h4>
                     <ul className="text-sm text-gray-700 space-y-1">
-                      <li>• Dantzig, G.B. (1957). "Discrete-Variable Extremum Problems"</li>
-                      <li>• Balas, E., Zemel, E. (1980). "An Algorithm for Large Zero-One Knapsack Problems"</li>
-                      <li>• Pisinger, D. (1999). "Core Problems in Knapsack Algorithms"</li>
-                      <li>• Martello, S., Pisinger, D., Toth, P. (2000). "New Trends in Exact Algorithms for the 0-1 Knapsack Problem"</li>
+                      <li>• Dantzig, G.B. (1957). &quot;Discrete-Variable Extremum Problems&quot;</li>
+                      <li>• Balas, E., Zemel, E. (1980). &quot;An Algorithm for Large Zero-One Knapsack Problems&quot;</li>
+                      <li>• Pisinger, D. (1999). &quot;Core Problems in Knapsack Algorithms&quot;</li>
+                      <li>• Martello, S., Pisinger, D., Toth, P. (2000). &quot;New Trends in Exact Algorithms for the 0-1 Knapsack Problem&quot;</li>
                     </ul>
                   </div>
                 </div>

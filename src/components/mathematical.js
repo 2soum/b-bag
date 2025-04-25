@@ -20,11 +20,11 @@ export default function Mathematical() {
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="font-mono bg-gray-100 px-2 py-1 rounded">v_i</span>
-                      <span>Valeur de l'objet <span className="font-mono">i</span></span>
+                      <span>Valeur de l&apos;objet <span className="font-mono">i</span></span>
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="font-mono bg-gray-100 px-2 py-1 rounded">w_i</span>
-                      <span>Poids de l'objet <span className="font-mono">i</span></span>
+                      <span>Poids de l&apos;objet <span className="font-mono">i</span></span>
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="font-mono bg-gray-100 px-2 py-1 rounded">W</span>
@@ -32,7 +32,7 @@ export default function Mathematical() {
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="font-mono bg-gray-100 px-2 py-1 rounded">x_i</span>
-                      <span>Variable de décision (1 si l'objet <span className="font-mono">i</span> est sélectionné, 0 sinon)</span>
+                      <span>Variable de décision (1 si l&apos;objet <span className="font-mono">i</span> est sélectionné, 0 sinon)</span>
                     </li>
                   </ul>
                 </div>
@@ -211,10 +211,10 @@ execute {
                   <div className="p-3 bg-yellow-50 border border-yellow-100 rounded-md">
                     <h4 className="font-semibold text-yellow-800">NP-difficulté</h4>
                     <p className="text-sm text-gray-700">
-                      Le problème du sac à dos est NP-difficile, ce qui signifie qu'il n'existe pas d'algorithme en temps polynomial connu pour le résoudre de manière exacte.
+                      Le problème du sac à dos est NP-difficile, ce qui signifie qu&apos;il n&apos;existe pas d&apos;algorithme en temps polynomial connu pour le résoudre de manière exacte.
                     </p>
                     <p className="text-xs text-gray-600">
-                      Un algorithme en temps polynomial est un algorithme dont le temps d'exécution peut être exprimé par un polynôme en fonction de la taille de l'entrée. Cela signifie que le temps de calcul augmente de manière raisonnable avec la taille du problème.
+                      Un algorithme en temps polynomial est un algorithme dont le temps d&apos;exécution peut être exprimé par un polynôme en fonction de la taille de l&apos;entrée. Cela signifie que le temps de calcul augmente de manière raisonnable avec la taille du problème.
                     </p>
                   </div>
 
@@ -222,7 +222,7 @@ execute {
                   <div className="p-3 bg-purple-50 border border-purple-100 rounded-md">
                     <h4 className="font-semibold text-purple-800">Approximation</h4>
                     <p className="text-sm text-gray-700">
-                      Il existe des algorithmes d'approximation avec une garantie de performance de (1-ε) pour tout ε ≥ 0, au prix d'une complexité en O(n/ε).
+                      Il existe des algorithmes d&apos;approximation avec une garantie de performance de (1-ε) pour tout ε ≥ 0, au prix d&apos;une complexité en O(n/ε).
                     </p>
                   </div>
 
@@ -232,7 +232,7 @@ execute {
                       La relaxation linéaire (autorisant 0 ≤ x<sub>i</sub> ≤ 1) donne une borne supérieure sur la valeur optimale et peut être utilisée dans les algorithmes de <a href="https://fr.wikipedia.org/wiki/Branch_and_bound" target="_blank" className="text-blue-500 hover:underline">Branch and Bound</a>.
                     </p>
                     <p className="text-sm text-gray-700">
-                      Vous pouvez consulter un exemple d'algorithme Branch and Bound <a href="https://en.wikipedia.org/wiki/Branch_and_bound" target="_blank" className="text-blue-500 hover:underline">ici</a>.
+                      Vous pouvez consulter un exemple d&apos;algorithme Branch and Bound <a href="https://en.wikipedia.org/wiki/Branch_and_bound" target="_blank" className="text-blue-500 hover:underline">ici</a>.
                     </p>
                   </div>
 

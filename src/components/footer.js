@@ -10,7 +10,7 @@ export default function Footer() {
                 Simulation et résolution du problème du sac à dos binaire avec IBM CPLEX Optimizer
               </p>
               <p className="text-blue-300 text-sm">
-                © 2025 Projet d'Optimisation
+                © 2025 Projet d&apos;optimisation par DAYSSAM BAKAAR, ALI KAFAGY et AHMED KAFAGY
               </p>
             </div>
             
@@ -39,7 +39,7 @@ export default function Footer() {
           
           <div className="mt-8 pt-8 border-t border-blue-800 text-center">
             <p className="text-blue-300 text-sm">
-              Ce projet a été réalisé dans le cadre du cours d'optimisation par DAYSSAM BAKAAR, ALI KAFAGY et AHMED KAFAGY - 2025 EFREI PARIS
+              Ce projet a été réalisé dans le cadre du cours d&apos;optimisation par DAYSSAM BAKAAR, ALI KAFAGY et AHMED KAFAGY - 2025 EFREI PARIS
             </p>
             
             

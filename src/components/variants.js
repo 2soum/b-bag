@@ -75,9 +75,9 @@ export default function Variants() {
                         {openAccordion === 'description' && (
                           <div className="mt-3">
                             <p className="text-gray-700 mb-3">
-                              Le problème du sac à dos fractionnel est une variante où l'on peut sélectionner
+                              Le problème du sac à dos fractionnel est une variante où l&apos;on peut sélectionner
                               une fraction arbitraire de chaque objet. La variable de décision x<sub>i</sub> peut
-                              prendre n'importe quelle valeur réelle entre 0 et 1.
+                              prendre n&apos;importe quelle valeur réelle entre 0 et 1.
                             </p>
                             <p className="text-gray-700">
                               Cette variante peut être pertinente dans des situations où les objets sont divisibles,
@@ -127,7 +127,7 @@ export default function Variants() {
                             <ol className="list-decimal list-inside space-y-2 text-gray-700 ml-2">
                               <li>Calculer le ratio valeur/poids (v<sub>i</sub>/w<sub>i</sub>) pour chaque objet.</li>
                               <li>Trier les objets par ratio valeur/poids décroissant.</li>
-                              <li>Sélectionner les objets dans l'ordre, en prenant la fraction maximale possible de chaque objet jusqu'à remplir le sac.</li>
+                              <li>Sélectionner les objets dans l&apos;ordre, en prenant la fraction maximale possible de chaque objet jusqu&apos;à remplir le sac.</li>
                             </ol>
                             <p className="mt-3 text-gray-700">
                               Cette approche gloutonne garantit une solution optimale pour le problème fractionnel.
@@ -182,8 +182,8 @@ export default function Variants() {
                       <h3 className="text-xl font-semibold text-blue-800">Problème du Sac à Dos Non Borné</h3>
 
                       <p className="text-gray-700">
-                        Dans cette variante, chaque type d'objet peut être sélectionné un nombre illimité de fois.
-                        L'objectif reste de maximiser la valeur totale sans dépasser la capacité du sac.
+                        Dans cette variante, chaque type d&apos;objet peut être sélectionné un nombre illimité de fois.
+                        L&apos;objectif reste de maximiser la valeur totale sans dépasser la capacité du sac.
                       </p>
 
                       <div
@@ -225,8 +225,8 @@ export default function Variants() {
                             </p>
                             <ol className="list-decimal list-inside space-y-2 text-gray-700 ml-2">
                               <li>Calculer le ratio valeur/poids (v<sub>i</sub>/w<sub>i</sub>) pour chaque objet.</li>
-                              <li>Sélectionner un objet à la fois et l'ajouter au sac, répéter jusqu'à ce que la capacité soit atteinte.</li>
-                              <li>Ajouter des objets jusqu'à ce que la capacité du sac soit remplie ou qu'il n'y ait plus d'objets à ajouter.</li>
+                              <li>Sélectionner un objet à la fois et l&apos;ajouter au sac, répéter jusqu&apos;à ce que la capacité soit atteinte.</li>
+                              <li>Ajouter des objets jusqu&apos;à ce que la capacité du sac soit remplie ou qu&apos;il n&apos;y ait plus d&apos;objets à ajouter.</li>
                             </ol>
                             <p className="mt-3 text-gray-700">
                               Cette approche peut ne pas être optimale dans certains cas où un objet répété apporte une meilleure solution.
@@ -279,7 +279,7 @@ export default function Variants() {
 
                           {/* Légende */}
                           <text x="150" y="195" textAnchor="middle" fill="#1F2937" fontSize="10">
-                            Chaque type d'objet peut être pris plusieurs fois
+                            Chaque type d&apos;objet peut être pris plusieurs fois
                           </text>
                         </svg>
                       </div>
@@ -296,7 +296,7 @@ export default function Variants() {
 
                       <p className="text-gray-700">
                         Dans cette variante, nous avons plusieurs sacs à dos, chacun avec sa propre capacité.
-                        L'objectif est de répartir les objets entre les sacs de manière à maximiser la valeur totale.
+                        L&apos;objectif est de répartir les objets entre les sacs de manière à maximiser la valeur totale.
                       </p>
 
                       <div
@@ -409,7 +409,7 @@ export default function Variants() {
 
                       <p className="text-gray-700">
                         Cette variante considère plusieurs contraintes (dimensions) pour chaque objet, comme le poids,
-                        le volume, ou d'autres ressources. Chaque dimension a sa propre capacité maximale.
+                        le volume, ou d&apos;autres ressources. Chaque dimension a sa propre capacité maximale.
                       </p>
 
                       <div
@@ -474,7 +474,7 @@ export default function Variants() {
                           <div className="mt-3">
                             <p className="text-gray-700">
                               Le problème du sac à dos multidimensionnel est utilisé dans des domaines où plusieurs ressources
-                              sont limitées, comme la gestion de projets, l'optimisation des espaces de stockage dans des entrepôts,
+                              sont limitées, comme la gestion de projets, l&apos;optimisation des espaces de stockage dans des entrepôts,
                               ou la planification de la production avec des contraintes multiples (poids, volume, temps, etc.).
                             </p>
                           </div>

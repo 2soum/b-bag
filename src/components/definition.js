@@ -10,14 +10,14 @@ export default function Definition() {
               <h3 className="section-subtitle">Définition</h3>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Le problème du sac à dos binaire est un 
-                problème d'optimisation  fondamental. Il consiste à 
-                sélectionner un ensemble d'objets ayant chacun une valeur et un poids, 
+                problème d&apos;optimisation  fondamental. Il consiste à 
+                sélectionner un ensemble d&apos;objets ayant chacun une valeur et un poids, 
                 de manière à maximiser la valeur totale en respectant une 
-                contrainte de poids maximum d'ou le nom problème du sac à dos.
+                contrainte de poids maximum d&apos;ou le nom problème du sac à dos.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
               Dans la version binaire du problème, chaque objet peut être soit entièrement sélectionné (1), soit entièrement exclu (0). 
-              L'objectif est de trouver la sélection d'objets qui maximise la valeur totale sans dépasser la capacité du sac (poids maximal).
+              L&apos;objectif est de trouver la sélection d&apos;objets qui maximise la valeur totale sans dépasser la capacité du sac (poids maximal).
               </p>
               
               <div className="mt-8 p-6 bg-blue-50 rounded-lg border border-blue-100">
@@ -49,7 +49,7 @@ export default function Definition() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="card">
                   <h4 className="text-lg font-semibold text-blue-700 mb-2">Type de problème</h4>
-                  <p className="text-gray-700">Problème d'optimisation combinatoire NP-difficile</p>
+                  <p className="text-gray-700">Problème d&apos;optimisation combinatoire NP-difficile</p>
                 </div>
                 
                 <div className="card">
@@ -83,7 +83,7 @@ export default function Definition() {
                     <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-800 font-bold">2</div>
                     <div>
                       <h4 className="font-semibold">Branch and Bound</h4>
-                      <p className="text-sm text-gray-600">Exploration intelligente de l'espace de solutions</p>
+                      <p className="text-sm text-gray-600">Exploration intelligente de l&apos;espace de solutions</p>
                     </div>
                   </div>
                   

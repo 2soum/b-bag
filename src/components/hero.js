@@ -11,7 +11,7 @@ export default function Hero() {
               Problème du Sac à Dos Binaire
             </h1>
             <p className="text-xl md:text-2xl text-blue-100">
-              Une approche interactive à l'optimisation combinatoire avec simulation visuelle et résolution CPLEX
+              Une approche interactive à l&apos;optimisation combinatoire avec simulation visuelle et résolution CPLEX
             </p>
             <div className="pt-4 flex flex-wrap gap-4">
               <a href="#simulation" className="btn-primary flex items-center gap-2">
