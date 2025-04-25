@@ -4,19 +4,19 @@ export default function Mathematical() {
     <section id="mathematical" className="py-20 bg-gray-50">
       <div className="container mx-auto max-w-6xl px-4">
         <h2 className="section-title">Formulation Mathématique</h2>
-        
+
         <div className="grid lg:grid-cols-5 gap-8">
           <div className="lg:col-span-3 space-y-8">
             <div className="card">
               <h3 className="section-subtitle">Modèle mathématique</h3>
-              
+
               <div className="space-y-6">
                 <div>
                   <h4 className="text-lg font-semibold text-blue-700 mb-2">Notations</h4>
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-center gap-2">
                       <span className="font-mono bg-gray-100 px-2 py-1 rounded">n</span>
-                      <span>Nombre d'objets disponibles</span>
+                      <span>Nombre d&apos;objets disponibles</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="font-mono bg-gray-100 px-2 py-1 rounded">v_i</span>
@@ -36,12 +36,12 @@ export default function Mathematical() {
                     </li>
                   </ul>
                 </div>
-                
+
                 <div>
                   <h4 className="text-lg font-semibold text-blue-700 mb-2">Fonction objectif</h4>
                   <div className="bg-white p-4 rounded-md border border-gray-200 overflow-x-auto">
                     <div className="text-center font-mono text-lg">
-                      Maximiser: 
+                      Maximiser:
                       <span className="ml-2 text-blue-800">
                         ∑<sub>i=1</sub><sup>n</sup> v<sub>i</sub> × x<sub>i</sub>
                       </span>
@@ -51,7 +51,7 @@ export default function Mathematical() {
                     La fonction objectif maximise la somme des valeurs des objets sélectionnés.
                   </p>
                 </div>
-                
+
                 <div>
                   <h4 className="text-lg font-semibold text-blue-700 mb-2">Contraintes</h4>
                   <div className="space-y-4">
@@ -65,7 +65,7 @@ export default function Mathematical() {
                     <p className="text-gray-600 text-sm">
                       La somme des poids des objets sélectionnés ne doit pas dépasser la capacité du sac.
                     </p>
-                    
+
                     <div className="bg-white p-4 rounded-md border border-gray-200 overflow-x-auto">
                       <div className="text-center font-mono text-lg">
                         <span className="text-blue-800">
@@ -80,10 +80,10 @@ export default function Mathematical() {
                 </div>
               </div>
             </div>
-            
+
             <div className="card">
               <h3 className="text-xl font-semibold text-blue-800 mb-4">Exemple illustratif</h3>
-              
+
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse">
                   <thead>
@@ -128,13 +128,13 @@ export default function Mathematical() {
                   </tbody>
                 </table>
               </div>
-              
+
               <div className="mt-4 p-3 bg-blue-50 rounded-md">
                 <p className="text-blue-800 font-medium">
                   Capacité du sac (W) = 45
                 </p>
               </div>
-              
+
               <div className="mt-6">
                 <h4 className="text-lg font-semibold text-blue-700 mb-2">Solution optimale</h4>
                 <div className="p-4 bg-green-50 border border-green-100 rounded-md">
@@ -151,15 +151,15 @@ export default function Mathematical() {
               </div>
             </div>
           </div>
-          
+
           <div className="lg:col-span-2">
             <div className="sticky top-24 space-y-8">
               <div className="card">
                 <h3 className="text-xl font-semibold text-blue-800 mb-4">Implémentation en OPL CPLEX</h3>
-                
+
                 <div className="bg-gray-900 text-gray-100 p-4 rounded-md overflow-hidden">
                   <pre className="text-sm overflow-x-auto">
-{`// Modèle OPL pour le problème du sac à dos binaire
+                    {`// Modèle OPL pour le problème du sac à dos binaire
 int n = 5;                // Nombre d'objets
 range Items = 1..n;
 
@@ -180,31 +180,39 @@ subject to {
                   </pre>
                 </div>
               </div>
-              
+
               <div className="card">
                 <h3 className="text-xl font-semibold text-blue-800 mb-4">Propriétés mathématiques</h3>
-                
+
                 <div className="space-y-4">
                   <div className="p-3 bg-yellow-50 border border-yellow-100 rounded-md">
                     <h4 className="font-semibold text-yellow-800">NP-difficulté</h4>
                     <p className="text-sm text-gray-700">
                       Le problème du sac à dos est NP-difficile, ce qui signifie qu'il n'existe pas d'algorithme en temps polynomial connu pour le résoudre de manière exacte.
                     </p>
+                    <p className="text-xs text-gray-600">
+                      Un algorithme en temps polynomial est un algorithme dont le temps d'exécution peut être exprimé par un polynôme en fonction de la taille de l'entrée. Cela signifie que le temps de calcul augmente de manière raisonnable avec la taille du problème.
+                    </p>
                   </div>
-                  
+
+
                   <div className="p-3 bg-purple-50 border border-purple-100 rounded-md">
                     <h4 className="font-semibold text-purple-800">Approximation</h4>
                     <p className="text-sm text-gray-700">
                       Il existe des algorithmes d'approximation avec une garantie de performance de (1-ε) pour tout ε ≥ 0, au prix d'une complexité en O(n/ε).
                     </p>
                   </div>
-                  
+
                   <div className="p-3 bg-green-50 border border-green-100 rounded-md">
                     <h4 className="font-semibold text-green-800">Relaxation linéaire</h4>
                     <p className="text-sm text-gray-700">
-                      La relaxation linéaire (autorisant 0 ≤ x<sub>i</sub> ≤ 1) donne une borne supérieure sur la valeur optimale et peut être utilisée dans les algorithmes de Branch and Bound.
+                      La relaxation linéaire (autorisant 0 ≤ x<sub>i</sub> ≤ 1) donne une borne supérieure sur la valeur optimale et peut être utilisée dans les algorithmes de <a href="https://fr.wikipedia.org/wiki/Branch_and_bound" target="_blank" className="text-blue-500 hover:underline">Branch and Bound</a>.
+                    </p>
+                    <p className="text-sm text-gray-700">
+                      Vous pouvez consulter un exemple d'algorithme Branch and Bound <a href="https://en.wikipedia.org/wiki/Branch_and_bound" target="_blank" className="text-blue-500 hover:underline">ici</a>.
                     </p>
                   </div>
+
                 </div>
               </div>
             </div>

@@ -9,17 +9,15 @@ export default function Definition() {
             <div className="space-y-6">
               <h3 className="section-subtitle">Définition</h3>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Le problème du sac à dos binaire (Binary Knapsack Problem) est un 
-                problème d'optimisation combinatoire fondamental. Il consiste à 
+                Le problème du sac à dos binaire est un 
+                problème d'optimisation  fondamental. Il consiste à 
                 sélectionner un ensemble d'objets ayant chacun une valeur et un poids, 
-                de manière à maximiser la valeur totale tout en respectant une 
-                contrainte de poids maximum.
+                de manière à maximiser la valeur totale en respectant une 
+                contrainte de poids maximum d'ou le nom problème du sac à dos.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Dans la version binaire du problème, chaque objet peut être soit 
-                entièrement sélectionné (1), soit entièrement exclu (0). L'objectif 
-                est de trouver la combinaison d'objets qui maximise la valeur totale 
-                sans dépasser la capacité du sac.
+              Dans la version binaire du problème, chaque objet peut être soit entièrement sélectionné (1), soit entièrement exclu (0). 
+              L'objectif est de trouver la sélection d'objets qui maximise la valeur totale sans dépasser la capacité du sac (poids maximal).
               </p>
               
               <div className="mt-8 p-6 bg-blue-50 rounded-lg border border-blue-100">

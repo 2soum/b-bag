@@ -81,42 +81,73 @@ export default function Simulation() {
     setAnimationLog([]);
     setSolution(null);
     
-    // Initialiser l'animation
-    const animationSteps = dynamicProgrammingAnimation(items, capacity);
-    
-    // Lancer l'animation étape par étape
-    let currentStep = 0;
-    const animationInterval = setInterval(() => {
-      if (currentStep < animationSteps.length) {
-        setAnimationStep(currentStep);
-        setAnimationLog(prevLog => [...prevLog, animationSteps[currentStep].message]);
-        
-        // Mise à jour de la sélection des objets à la dernière étape
-        if (currentStep === animationSteps.length - 1) {
-          setItems(prev => prev.map(item => ({
-            ...item,
-            selected: animationSteps[currentStep].selectedItems.includes(item.id)
-          })));
-          
-          setSolution({
-            selectedItems: animationSteps[currentStep].selectedItems,
-            totalValue: animationSteps[currentStep].totalValue,
-            totalWeight: animationSteps[currentStep].totalWeight
-          });
-        }
-        
-        currentStep++;
-      } else {
-        clearInterval(animationInterval);
+    try {
+      // Initialiser l'animation
+      const animationSteps = dynamicProgrammingAnimation(items, capacity);
+      
+      // Vérification de sécurité pour éviter les erreurs
+      if (!animationSteps || animationSteps.length === 0) {
+        console.error("Erreur: Impossible de générer les étapes d'animation");
         setIsAnimating(false);
+        return;
       }
-    }, 800); // Intervalle entre les étapes d'animation
-    
-    return () => clearInterval(animationInterval);
+      
+      // Lancer l'animation étape par étape
+      let currentStep = 0;
+      const animationInterval = setInterval(() => {
+        if (currentStep < animationSteps.length && animationSteps[currentStep]) {
+          setAnimationStep(currentStep);
+          
+          // Vérifier que le message existe - utiliser une valeur par défaut si non
+          const stepMessage = animationSteps[currentStep]?.message || "Étape d'animation";
+          setAnimationLog(prevLog => [...prevLog, stepMessage]);
+          
+          // Mise à jour de la sélection des objets à la dernière étape
+          if (currentStep === animationSteps.length - 1) {
+            // Vérification de sécurité pour selectedItems
+            const currentSelectedItems = animationSteps[currentStep]?.selectedItems || [];
+            
+            setItems(prev => prev.map(item => ({
+              ...item,
+              selected: currentSelectedItems.includes(item.id)
+            })));
+            
+            // Définir la solution avec des valeurs par défaut si nécessaire
+            setSolution({
+              selectedItems: currentSelectedItems,
+              totalValue: animationSteps[currentStep]?.totalValue || 0,
+              totalWeight: animationSteps[currentStep]?.totalWeight || 0
+            });
+          }
+          
+          currentStep++;
+        } else {
+          clearInterval(animationInterval);
+          setIsAnimating(false);
+        }
+      }, 800); // Intervalle entre les étapes d'animation
+      
+      return () => clearInterval(animationInterval);
+    } catch (error) {
+      console.error("Erreur lors de la résolution:", error);
+      setIsAnimating(false);
+      setAnimationLog(["Une erreur s'est produite lors de la simulation"]);
+      return () => {};
+    }
   };
   
   // Algorithme de programmation dynamique avec animation
   const dynamicProgrammingAnimation = (items, capacity) => {
+    // Vérification de sécurité pour items
+    if (!items || items.length === 0) {
+      return [{ 
+        message: "Aucun objet disponible pour la simulation",
+        selectedItems: [],
+        totalValue: 0,
+        totalWeight: 0
+      }];
+    }
+    
     const n = items.length;
     const W = Math.floor(capacity * 10); // Convertir en nombres entiers pour la programmation dynamique
     const weights = items.map(item => Math.floor(item.weight * 10));
@@ -159,30 +190,46 @@ export default function Simulation() {
       }
       
       // Ajouter une étape d'animation après avoir traité chaque objet
-      const currentSelected = selected[i][W];
-      const currentTotalValue = dp[i][W];
+      // Vérification de sécurité pour les valeurs
+      const currentSelected = selected[i][W] || [];
+      const currentTotalValue = dp[i][W] || 0;
+      
+      // Calcul sécurisé du poids total
       const currentTotalWeight = currentSelected.reduce(
-        (total, id) => total + items.find(item => item.id === id).weight,
+        (total, id) => {
+          const item = items.find(item => item.id === id);
+          return item ? total + item.weight : total;
+        },
         0
       );
       
       steps.push({
-        message: `Évaluation de l'objet ${i}: "${items[i-1].name}" (valeur: ${values[i-1]}, poids: ${weights[i-1]/10})...`,
+        message: `Évaluation de l'objet ${i}: "${items[i-1]?.name || 'Objet'}" (valeur: ${values[i-1] || 0}, poids: ${(weights[i-1] || 0)/10})...`,
         selectedItems: currentSelected,
         totalValue: currentTotalValue,
         totalWeight: currentTotalWeight
       });
     }
     
+    // Récupérer la solution finale de manière sécurisée
+    const finalSelected = (selected && selected[n] && selected[n][W]) ? selected[n][W] : [];
+    const finalValue = (dp && dp[n] && dp[n][W]) ? dp[n][W] : 0;
+    
+    // Calcul sécurisé du poids total final
+    const finalWeight = finalSelected.reduce(
+      (total, id) => {
+        const item = items.find(item => item.id === id);
+        return item ? total + item.weight : total;
+      },
+      0
+    );
+    
     // Ajouter l'étape finale avec la solution
     steps.push({
-      message: `Solution optimale trouvée avec une valeur totale de ${dp[n][W]} !`,
-      selectedItems: selected[n][W],
-      totalValue: dp[n][W],
-      totalWeight: selected[n][W].reduce(
-        (total, id) => total + items.find(item => item.id === id).weight,
-        0
-      )
+      message: `Solution optimale trouvée avec une valeur totale de ${finalValue} !`,
+      selectedItems: finalSelected,
+      totalValue: finalValue,
+      totalWeight: finalWeight
     });
     
     return steps;
@@ -441,7 +488,7 @@ export default function Simulation() {
                 </div>
                 
                 {/* Solution optimale */}
-                {solution && (
+                {solution && solution.selectedItems && (
                   <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-lg mb-4">
                     <div className="flex items-center gap-2 mb-2">
                       <Award size={24} className="text-yellow-600" />
